@@ -37,26 +37,31 @@ function draw() {
     push();
     stroke(255);
     strokeWeight(4);
-    
     ellipse(0, 0, 300, 300);
-    pop();
-
-    push();
-    stroke(199,36,177);
-    strokeWeight(5);
-    arc(0, 0, 270, 270, 0, hrArc);
-    pop();
-
-    push();
-    stroke(68,214,44);
-    strokeWeight(5);
-    arc(0, 0, 250, 250, 0, mnArc);
     pop();
 
     push();
     stroke(255,173,0);
     strokeWeight(5);
     arc(0, 0, 230, 230, 0, secArc);
+    rotate(secArc);
+    line(0, 0, 100, 0);
+    pop();
+
+    push();
+    stroke(68,214,44);
+    strokeWeight(5);
+    arc(0, 0, 250, 250, 0, mnArc);
+    rotate(mnArc);
+    line(0, 0, 75, 0);
+    pop();
+
+    push();
+    stroke(199,36,177);
+    strokeWeight(5);
+    arc(0, 0, 270, 270, 0, hrArc);
+    rotate(hrArc);
+    line(0, 0, 50, 0);
     pop();
 
 }
